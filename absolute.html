@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Posiciones CSS</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <a href="/index.html"><li>Inicio</li></a>
+                <a href="/relative.html"><li>Relative</li></a>
+                <a href="/fixed.html"><li>Fixed</li></a>
+                <a href="/absolute.html"><li>Absolute</li></a>
+                <a href="/sticky.html"><li>Sticky</li></a>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <section class="secabsolute">
+        <h2>Position Absolute</h2>
+        <p>La propiedad absolute remueve el espacio del elemento en el flujo reduciendolo a cero, asi que si un elemento se manejaba por su contenido, lo afecta ya que lo mostrara con contenido tamaño "0".</p>
+        <p>Tambien comprendí que el ancho de un elemento posicionado absolute es en base a su contenido, pero tambien sigue respetando la herencia de su elemento padre en referencia a medidas de tamaño.</p>
+        <p>Es importante considerar que las coordenadas se calculan respecto al ancestro mas cercano que este posicionado si en dado caso no hay un padre contenedor con cualquier osition, y si no hay ancestro contenedor con cualquier position, buscara al viewport (body) como referencia.</p>
+        <h2>Ejemplo Absolute</h2>
+        <p style="color: rgb(150, 101, 12);">Se muestra la imagen ajustada de manera que quede pegada al bottom del elemento padre con clase"secabsolute" que tiene posicion relative como base.</p>
+        <p>El Airbus A319 es un avión civil de pasajeros de Airbus SAS, la empresa francesa de fabricación de aeronaves. Es un modelo acortado derivado del A320, con cambios mínimos. Debido a que tiene los mismos depósitos de combustible, pero menos pasajeros (124 en configuración de 2 clases, y un máximo de 156 pasajeros, en configuración sin cocinas y con 8 salidas de emergencia, en vez de las 6 salidas del A319 estándar), su alcance se ve aumentado hasta los 7200 km, el mayor de su clase. Como el A320, posee mandos de control fly-by-wire.</p>
+
+        <img class="absolute" src="/Images/Airbus-A319.jpg" alt="Airbus A319" style="height: 400px; width: 600px;">
+        
+        <p>En 2003 easyJet compró A319 sin cocinas por lo que la capacidad aumenta hasta 156 pasajeros en 1 clase, pero para satisfacer las normas de evacuación se añadieron puertas adicionales de emergencia sobre las alas, siendo easyJet el cliente de lanzamiento de la versión de capacidad de 156 pasajeros y 8 salidas de emergencia. Actualmente algunas de esas unidades encargadas por easyJet están operando en la aerolínea chilena de bajo coste Sky Airline.</p>
+
+        <p>Usa los mismos motores que el A320. Fue certificado en 1996, el mismo año en que entró en servicio con Swissair.</p>
+    </section>
+</main>  
+</body>
+</html>
